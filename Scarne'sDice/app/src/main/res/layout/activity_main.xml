@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score:   "
+        android:layout_alignParentTop="true"
+        android:id="@+id/score1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@+id/score1"
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/value1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Computer Score:   "
+        android:id="@+id/score2"
+        android:layout_toRightOf="@+id/value1"
+        android:layout_alignParentTop="true"
+
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@+id/score2"
+        android:layout_alignParentTop="true"
+        android:id="@+id/value2"
+        />
+
+
+    <TextView
+        android:id="@+id/turns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Score:   "
+        android:layout_below="@id/score1"
+        android:paddingLeft="45dp"
+        android:paddingTop="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@+id/turns"
+        android:layout_below="@id/score1"
+        android:paddingTop="40dp"
+        android:id="@+id/turnsvalue"
+
+
+    />
+
+
+    <ImageView
+        android:id="@+id/dice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/turns"
+        android:paddingLeft="25dp"
+
+        android:src="@drawable/dice1"
+        />
+
+    <TextView
+        android:id="@+id/who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Turn!"
+        android:layout_below="@id/turns"
+        android:layout_toRightOf="@+id/dice1"
+        android:paddingLeft="60dp"
+        android:paddingTop="50dp"
+        android:textAllCaps="true"
+        />
+
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="ROLL"
+        android:layout_below="@id/dice1"/>
+
+    <Button
+        android:id="@+id/hold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="HOLD"
+        android:layout_toRightOf="@id/roll"
+        android:layout_below="@id/dice1"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="RESET"
+        android:layout_toRightOf="@id/hold"
+        android:layout_below="@id/dice1"/>
+
+
+
+
+
+
+</RelativeLayout>
